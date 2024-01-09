@@ -15,17 +15,28 @@ class TextLearnView extends StatelessWidget {
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.right,
-            style: const TextStyle(
-                wordSpacing: 2,
-                decoration: TextDecoration.underline,
-                fontSize: 16,
-                fontStyle: FontStyle.italic,
-                letterSpacing: 2,
-                color: Colors.lime,
-                fontWeight: FontWeight.w600),
+            style: ProjectStyles.welcomeStyle,
+          ),
+          Text(
+            'Selam $name ${name.length}',
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            textAlign: TextAlign.right,
+            style: ProjectStyles.welcomeStyle,
           ),
         ],
       )),
     );
   }
+}
+
+class ProjectStyles {
+  static TextStyle welcomeStyle = const TextStyle(
+      wordSpacing: 2,
+      decoration: TextDecoration.underline,
+      fontSize: 16,
+      fontStyle: FontStyle.italic,
+      letterSpacing: 2,
+      color: Colors.lime,
+      fontWeight: FontWeight.w600);
 }
