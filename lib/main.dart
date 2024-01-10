@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/101/app_bar_learn.dart';
+import 'package:flutter_application_first/101/icon_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.red,
         elevation: 0,
       )),
-      home: const AppBarLearnView(),
+      home: IconLearnView(),
     );
   }
 }
