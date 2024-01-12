@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 
 class AppBarLearnView extends StatelessWidget {
   const AppBarLearnView({super.key});
-  final String _title = 'Welcome Learn';
+  //final String _title = 'Welcome Learn';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
