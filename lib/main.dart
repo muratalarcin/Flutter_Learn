@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/101/image_learn.dart';
+import 'package:flutter_application_first/demos/note_demos_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       //   backgroundColor: Colors.red,
       //   elevation: 0,
       // )),
-      home: ImageLearn(),
+      home: const NoteDemosView(),
     );
   }
 }
