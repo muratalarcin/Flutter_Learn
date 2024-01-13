@@ -3,27 +3,29 @@ import 'package:flutter/material.dart';
 class StatelessLearn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var text2 = 'murat 1';
+    var text3 = 'murat 2';
     return Scaffold(
       appBar: AppBar(),
-      body: const Column(
+      body: Column(
         children: [
           TitleTextWidget(
-            text: 'murat 1',
+            text: text2,
           ),
           TitleTextWidget(
-            text: 'murat 2',
+            text: text3,
           ),
-          TitleTextWidget(
+          const TitleTextWidget(
             text: 'murat 3',
           ),
-          TitleTextWidget(
+          const TitleTextWidget(
             text: 'murat 4',
           ),
-          TitleTextWidget(
+          const TitleTextWidget(
             text: 'murat 5',
           ),
-          _CustomContainer(),
-          _EmtyBox()
+          const _CustomContainer(),
+          const _EmtyBox()
         ],
       ),
     );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/101/stateless_learn.dart';
+import 'package:flutter_application_first/101/padding_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,13 +15,14 @@ class MyApp extends StatelessWidget {
       //CupertinoApp de yapabiliriz, baştan sonra ios için yazıcaksak. Bu halde 2 side kullanılıyor.
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-          appBarTheme: const AppBarTheme(
-        centerTitle: true,
-        backgroundColor: Colors.red,
-        elevation: 0,
-      )),
-      home: StatelessLearn(),
+      theme: ThemeData.dark(),
+      // theme: ThemeData.dark().copyWith(
+      //     appBarTheme: const AppBarTheme(
+      //   centerTitle: true,
+      //   backgroundColor: Colors.red,
+      //   elevation: 0,
+      // )),
+      home: const PaddingLearn(),
     );
   }
 }
