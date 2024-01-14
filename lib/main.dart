@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/101/custom_widget_learn.dart';
+import 'package:flutter_application_first/101/indicator_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,14 +15,15 @@ class MyApp extends StatelessWidget {
       //CupertinoApp de yapabiliriz, baştan sonra ios için yazıcaksak. Bu halde 2 side kullanılıyor.
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark()
+          .copyWith(progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.white)),
       // theme: ThemeData.dark().copyWith(
       //     appBarTheme: const AppBarTheme(
       //   centerTitle: true,
       //   backgroundColor: Colors.red,
       //   elevation: 0,
       // )),
-      home: const CustomWidgetLearn(),
+      home: const IndicatorLearn(),
     );
   }
 }
