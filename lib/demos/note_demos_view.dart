@@ -15,7 +15,7 @@ class NoteDemosView extends StatelessWidget {
       backgroundColor: Colors.blueGrey[50],
       appBar: AppBar(
         systemOverlayStyle: SystemUiOverlayStyle.dark,
-        backgroundColor: Color.fromARGB(255, 240, 249, 255),
+        backgroundColor: const Color.fromARGB(255, 240, 249, 255),
       ),
       body: Padding(
         padding: PaddingItems.horizontalPadding,
