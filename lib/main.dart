@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/101/stateful_life_cycler_learn.dart';
+import 'package:flutter_application_first/101/text_field_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,16 +15,30 @@ class MyApp extends StatelessWidget {
       //CupertinoApp de yapabiliriz, baştan sonra ios için yazıcaksak. Bu halde 2 side kullanılıyor.
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.white)),
-      // theme: ThemeData.dark().copyWith(
-      //     appBarTheme: const AppBarTheme(
-      //   centerTitle: true,
-      //   backgroundColor: Colors.red,
-      //   elevation: 0,
-      // )),
-      home: const StatefullLifeCycleLearn(
-        message: 'Murata',
+      theme: ThemeData.dark().copyWith(
+        bottomAppBarTheme: const BottomAppBarTheme(shape: CircularNotchedRectangle()),
+        progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.white),
+        listTileTheme: const ListTileThemeData(contentPadding: EdgeInsets.zero),
+        cardTheme: CardTheme(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+        textSelectionTheme: const TextSelectionThemeData(
+            selectionColor: Colors.red, cursorColor: Colors.green, selectionHandleColor: Colors.black),
+        inputDecorationTheme: const InputDecorationTheme(
+          filled: true,
+          fillColor: Colors.white,
+          iconColor: Colors.red,
+          labelStyle: TextStyle(color: Colors.lime),
+          border: OutlineInputBorder(),
+          //floatingLabelStyle: TextStyle(color: Colors.red, fontSize: 24, fontWeight: FontWeight.w600),
+        ),
+        //textTheme: const TextTheme(titleMedium: TextStyle(color: Colors.red)),
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        ),
       ),
+
+      home: const TextFieldLearn(),
     );
   }
 }
