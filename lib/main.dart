@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/101/page_view_learn.dart';
+import 'package:flutter_application_first/101/stateful_life_cycler_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +22,9 @@ class MyApp extends StatelessWidget {
       //   backgroundColor: Colors.red,
       //   elevation: 0,
       // )),
-      home: const PageViewLearn(),
+      home: const StatefullLifeCycleLearn(
+        message: 'Murata',
+      ),
     );
   }
 }
