@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/demos/color_life_cycle.dart';
+import 'package:flutter_application_first/101/list_view_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: const ColorLifeCycleView(),
+      home: const ListViewLearn(),
     );
   }
 }
