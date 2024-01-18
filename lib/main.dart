@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/101/list_view_learn.dart';
+import 'package:flutter_application_first/demos/my_collostions_demos.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: const ListViewLearn(),
+      home: const MyCollostionsDemos(),
     );
   }
 }
