@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/202/tab_learn.dart';
+import 'package:flutter_application_first/202/moedel_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: const TabLearn(),
+      home: const ModelLearnView(),
     );
   }
 }

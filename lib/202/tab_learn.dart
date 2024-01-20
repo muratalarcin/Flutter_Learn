@@ -12,6 +12,7 @@ class TabLearn extends StatefulWidget {
 
 class _TabLearnState extends State<TabLearn> with TickerProviderStateMixin {
   late final TabController _tabController;
+  // ignore: unused_field
   final double _notchValue = 10;
   @override
   void initState() {
