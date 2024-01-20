@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/demos/my_collostions_demos.dart';
+import 'package:flutter_application_first/202/tab_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +16,14 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+        tabBarTheme: const TabBarTheme(
+          labelColor: Colors.amber,
+          dividerColor: Colors.transparent,
+          indicatorColor: Colors.greenAccent,
+          unselectedLabelColor: Colors.blueAccent,
+          indicatorSize: TabBarIndicatorSize.label,
+        ),
+
         bottomAppBarTheme: const BottomAppBarTheme(shape: CircularNotchedRectangle()),
         progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.white),
         listTileTheme: const ListTileThemeData(contentPadding: EdgeInsets.zero),
@@ -38,7 +46,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: const MyCollectionsDemos(),
+      home: const TabLearn(),
     );
   }
 }
