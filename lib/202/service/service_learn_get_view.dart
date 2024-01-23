@@ -17,6 +17,7 @@ class _ServiceLearnState extends State<ServiceLearn> {
   List<PostModel>? _items;
   String? name;
   bool _isLoading = false;
+  // ignore: unused_field
   late final Dio _dio;
   final _baseUrl = 'https://jsonplaceholder.typicode.com/';
 

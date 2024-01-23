@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/202/service/service_learn_get_view.dart';
+import 'package:flutter_application_first/202/service/package_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: const ServiceLearn(),
+      home: const PackageLearnView(),
     );
   }
 }
