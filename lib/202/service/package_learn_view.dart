@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_first/202/packet/launch_manager.dart';
 import 'package:flutter_application_first/202/packet/loading_bar.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri _url = Uri.parse('https://flutter.dev');
 
 class PackageLearnView extends StatefulWidget {
   const PackageLearnView({Key? key}) : super(key: key);
@@ -8,11 +12,16 @@ class PackageLearnView extends StatefulWidget {
   State<PackageLearnView> createState() => _PackageLearnViewState();
 }
 
-class _PackageLearnViewState extends State<PackageLearnView> with TickerProviderStateMixin {
+class _PackageLearnViewState extends State<PackageLearnView> with TickerProviderStateMixin, LaunchMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          launchUrl(_url);
+        },
+      ),
       body: const LoadingBar(),
     );
   }
