@@ -10,7 +10,7 @@ class PasswordTextField extends StatefulWidget {
 class _PasswordTextFieldState extends State<PasswordTextField> {
   final _obsureText = '#';
 
-  bool _isSecure = true;
+  bool _isSecure = true; //açılışta harflar kapalı göstersin, sonradan açılabilme visiblılity şekli
 
   void _changeLoading() {
     setState(() {
@@ -30,6 +30,7 @@ class _PasswordTextFieldState extends State<PasswordTextField> {
         border: const UnderlineInputBorder(),
         hintText: 'Password',
         suffix: _onVisiblityIcon(),
+        //prefix: ///
       ),
     );
   }
