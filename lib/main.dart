@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_first/202/image_learn_202.dart';
 import 'package:flutter_application_first/202/theme/light_theme.dart';
-import 'package:flutter_application_first/202/theme/theme_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
       //   ),
       //),
 
-      home: const ThemeLarnView(),
+      home: const ImageLearn202(),
     );
   }
 }
