@@ -49,7 +49,9 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProvid
         children: [
           ListTile(
             title: AnimatedOpacity(
-                duration: _DurationItems.durationLow, opacity: _isOpacity ? 1 : 0, child: const Text('data')),
+                duration: _DurationItems.durationLow,
+                opacity: _isOpacity ? 1 : 0,
+                child: const Text('data')),
             trailing: IconButton(
                 onPressed: () {
                   _changeOpacity();
@@ -57,7 +59,9 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProvid
                 icon: const Icon(Icons.precision_manufacturing_rounded)),
           ),
           AnimatedDefaultTextStyle(
-              style: (_isVisible ? context.textTheme().displayLarge : context.textTheme().titleMedium) ??
+              style: (_isVisible
+                      ? context.textTheme().displayLarge
+                      : context.textTheme().titleMedium) ??
                   const TextStyle(),
               duration: _DurationItems.durationLow,
               child: const Text('data')),
@@ -76,7 +80,10 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProvid
               child: Stack(
             children: [
               AnimatedPositioned(
-                  top: 10, curve: Curves.elasticOut, duration: _DurationItems.durationLow, child: Text('data'))
+                  top: 10,
+                  curve: Curves.elasticOut,
+                  duration: _DurationItems.durationLow,
+                  child: Text('data'))
             ],
           )),
           Expanded(

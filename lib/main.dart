@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_first/202/animated_learn.dart';
-import 'package:flutter_application_first/202/image_learn_202.dart';
+import 'package:flutter_application_first/202/oop_learn_view.dart';
 import 'package:flutter_application_first/202/theme/light_theme.dart';
 
 void main() {
@@ -49,7 +48,7 @@ class MyApp extends StatelessWidget {
       //   ),
       //),
 
-      home: const AnimatedLearnView(),
+      home: const OOPLearnView(),
     );
   }
 }
